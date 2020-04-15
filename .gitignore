@@ -1,0 +1,7 @@
+env
+*/__pycache__/*
+mount
+*.pyc
+*.csv
+*.json
+*.log
