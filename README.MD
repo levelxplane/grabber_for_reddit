@@ -1,8 +1,17 @@
 # Just some random scripts playing around with PRAW
 Python 3
 
+# Environment
+In your .bashrc or .zshrc add the following:
+
+`export REDDIT_USERNAME=<your username>`
+
+`export REDDIT_PASSWORD=<your password>`
+
+
 # Instructions - Local
 After cloning and moving into directory:
+
 `virutalenv env`
 
 `source env/usr/local/bin/activate` (or `source env/bin/activate`)
