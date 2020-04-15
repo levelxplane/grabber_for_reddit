@@ -19,7 +19,10 @@ After cloning and moving into directory:
 
 `docker exec -it grabber_app bash`
 
+`python <script>.py`
 
+
+# Scripts
 
 `ml_training_data_generator.py` for use with https://colab.research.google.com/drive/1VLG8e7YSEwypxU-noRNhsv5dW4NfTGce
 
