@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: grabber_app
+    command: bash -c "/usr/sbin/sshd -D"
+    volumes:
+      - .:/app
+      - ~/Public:/app/mount
+    ports:
+      - "8000:8000"
+      - "2222:22"
+    environment:
+      - REDDIT_SECRET=${REDDIT_SECRET}
+      - REDDIT_KEY=${REDDIT_KEY}
+      - REDDIT_USERNAME=${REDDIT_USERNAME}
+      - REDDIT_PASSWORD=${REDDIT_PASSWORD}
