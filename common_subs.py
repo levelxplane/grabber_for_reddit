@@ -129,6 +129,4 @@ if __name__ == '__main__':
     if not os.path.exists('common_subs_from_{}.json'.format(SUBREDDIT)):
         get_subs_from_users(reddit)
 
-    if not os.path.exists('{}_report.csv'.format(SUBREDDIT)):
-        # get_subname_from_id(reddit)
-        generate_report()
+    generate_report()
