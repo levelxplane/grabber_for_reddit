@@ -4,9 +4,9 @@ Python 3
 # Environment
 In your .bashrc or .zshrc add the following:
 
-`export REDDIT_USERNAME=<your username>`
+`export REDDIT_USERNAME='<your username>'`
 
-`export REDDIT_PASSWORD=<your password>`
+`export REDDIT_PASSWORD='<your password>'`
 
 
 # Instructions - Local
