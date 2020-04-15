@@ -9,11 +9,14 @@ UNAME=api()['USERNAME']
 PWORD=api()['PW']
 URL="https://reddit.com/"
 
+
+# things to change!
 SUBREDDIT='wallstreetbets'      # sub to inspect
 THREAD_COUNT=1              # number of top posts to use as sample size
 PERIOD='month'               # period of length for sample size. can be hour, day, month, all
 
 COMMENT_LIMIT=50               # number of comments to use from users found in threads
+TOP_SUBS = 20                  # limit results to only top X
 
 BASE_HEADERS = {"User-Agent": "grabber/0.1 by levelxplane"}
 
@@ -110,11 +113,8 @@ def generate_report():
             sorted_tuples.append((sub, count))
 
         sorted_tuples.sort(key = operator.itemgetter(1))
-        for x in sorted_tuples[::-1][1:21]:
+        for x in sorted_tuples[::-1][:TOP_SUBS]:
             print(x)
-        #
-        # for x in sorted_tuples.reverse():
-        #     print (x)
 
 if __name__ == '__main__':
     reddit = praw.Reddit(
